@@ -1,0 +1,64 @@
+.parent {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ; 
+    grid-template-rows: minmax(60px,auto);
+    grid-gap: 5px;
+    max-width: 1200px;
+    grid-template-areas: 
+    "header header header header"
+    "nav main main main"
+    "nav main main main"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer"
+    "footer footer footer footer";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.item1 {
+    /* width: 300px; */
+    height: 100%;
+    background-color: rgb(196, 240, 240);
+    grid-area: header;
+
+}
+
+.item2 {
+    /* width: 300px; */
+    height: 100%;
+    background-color: rgb(200, 186, 228);
+    grid-area: nav;
+
+}
+
+.item3 {
+    /* width: 300px; */
+    height: 100%;
+    background-color: rgb(238, 174, 174);
+    grid-area: aside;
+
+}
+
+.item4 {
+    /* width: 300px; */
+    height: 100%;
+    background-color:rgb(216, 243, 216);
+    grid-area: main;
+}
+
+.item5 {
+    /* width: 200px; */
+    height: 100%;
+    background-color:rgb(247, 201, 149);
+    grid-area: footer;
+}
